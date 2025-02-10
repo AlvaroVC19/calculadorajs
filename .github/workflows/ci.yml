@@ -30,6 +30,12 @@ jobs:
       - name: Clonar el repositorio
         uses: actions/checkout@v3
 
+      - name: Configurar Git
+        run: |
+          git config --global user.name "AlvaroVC19"
+          git config --global user.email "avilladiegoc@gmail.com"
+
+
       - name: Crear la carpeta de despliegue
         run: |
           mkdir public
