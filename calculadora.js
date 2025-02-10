@@ -1,24 +1,26 @@
-function suma(a, b){
+function suma(a, b) {
     return a + b;
-}
-
-function resta(a, b){
+  }
+  
+  function resta(a, b) {
     return a - b;
-}
-
-function multi(a, b){
+  }
+  
+  function multi(a, b) {
     return a * b;
-}
-
-function divide(a, b) {
-    let result;
+  }
+  
+  function divide(a, b) {
     if (b === 0) {
-        result = "No es posible hacer la operacion";
-    } else {
-        result = a / b;
-    }
-    return result;
-}
+      return "No es posible hacer la operación";
+    } 
+    return a / b;
+  }
+  
+  // Exportar las funciones al ámbito global
+  window.suma = suma;
+  window.resta = resta;
+  window.multiplicar = multi;
+  window.dividir = divide;
 
-
-module.exports = { suma, resta, multi, divide };
+  module.exports = { suma, resta, multi, divide };
