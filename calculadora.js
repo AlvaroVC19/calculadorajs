@@ -17,10 +17,6 @@ function suma(a, b) {
     return a / b;
   }
   
-  // Exportar las funciones al ámbito global
-  window.suma = suma;
-  window.resta = resta;
-  window.multiplicar = multi;
-  window.dividir = divide;
+  
 
   module.exports = { suma, resta, multi, divide };
